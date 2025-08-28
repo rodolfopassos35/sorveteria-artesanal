@@ -1,0 +1,57 @@
+.container_sabores_home {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.conteudo_sabores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.primeira_imagem,
+.segunda_imagem,
+.terceira_imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.caixa_apoio_primeira_imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caixa_apoio_primeira_imagem h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #d94f70;
+}
+
+.caixa_apoio_primeira_imagem span {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.caixa_apoio_primeira_imagem p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .conteudo_sabores {
+        grid-template-columns: 1fr;
+    }
+}

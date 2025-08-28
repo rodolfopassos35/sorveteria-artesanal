@@ -1,0 +1,78 @@
+.bannerSobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerSobre img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bannerSobre h1 {
+    position: absolute;
+    font-size: clamp(2.5rem, 5vw, 100px);
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.linhaSobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.caixaConteudoSobre {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.caixaConteudoSobre h2 {
+    font-size: clamp(2rem, 4vw, 32px);
+    color: #d94f70;
+}
+
+.caixaConteudoSobre span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.caixaConteudoSobre p {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 60%;
+}
+
+.imagensSobre {
+    flex: 1 1 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagensSobre img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .linhaSobre {
+        flex-direction: column;
+    }
+
+    .imagensSobre {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,65 @@
+.secaoBanner {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9DB79;
+    position: relative;
+}
+
+.caixaImagem {
+    width: max-content;
+    margin: 50px auto 0;
+
+}
+
+.tituloBanner {
+    width: 90%;
+    position: absolute;
+    top: 26%;
+    left: 12%;
+}
+
+.tituloBanner h1 {
+    font-size: clamp(2.5rem, 8vw, 100px);
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+@media (max-width:768px) {
+    .caixaImagem {
+        margin-top: 10%;
+    }
+
+    .tituloBanner {
+        top: 33%;
+        left: 8%;
+    }
+
+    .caixaImagem img {
+        height: 700px;
+        width: 700px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:375px) {
+    .tituloBanner {
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .caixaImagem {
+        width: 300px;
+        height: 500px;
+        margin-top: 25%;
+    }
+
+    .caixaImagem img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tituloBanner {
+        top: 40%;
+    }
+}

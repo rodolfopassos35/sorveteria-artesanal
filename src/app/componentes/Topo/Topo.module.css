@@ -1,0 +1,66 @@
+.containerTopo {
+    width: 100%;
+    height: 100px;
+    background-color: #F9DB79;
+    padding: 0 20px;
+}
+
+.conteudoTopo {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixaLinks a {
+    color: #000000;
+    font-size: 18px;
+    padding: 0px 40px;
+    z-index: 1;
+}
+
+
+@media (max-width:768px) {
+    .conteudoTopo {
+        display: block;
+        text-align: center;
+    }
+
+    .caixaLinks {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerTopo {
+        height: max-content;
+        position: relative;
+    }
+
+    .containerTopo::before {
+        content: "";
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 1px;
+        background-color: #756a6a;
+    }
+
+    .caixaLinks {
+        padding: 20px 0;
+    }
+}
+
+
+@media (max-width:375px) {
+    .caixaLinks a {
+        font-size: 14px;
+        padding: 20px;
+        color: #000000;
+    }
+
+}

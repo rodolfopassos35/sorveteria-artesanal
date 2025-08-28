@@ -1,0 +1,87 @@
+.bannerSabores {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerSabores img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bannerSabores h1 {
+    position: absolute;
+    font-size: clamp(2.5rem, 5vw, 100px);
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/* Seção sabores */
+
+.NossosSabores {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fefefe;
+}
+
+.NossosSabores h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #d94f70;
+}
+
+.caixaCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.caixaCards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.caixaCards div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.349);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.caixaCards div:hover {
+    transform: scale(1.05);
+}
+
+.caixaCards div h3 {
+    margin-top: 16px;
+    font-size: small;
+    color: #333;
+}
+
+.caixaCards div p {
+    margin-top: 8px;
+    font-size: x-small;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .caixaCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .caixaCards {
+        grid-template-columns: 1fr;
+    }
+}
