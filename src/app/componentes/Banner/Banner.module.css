@@ -19,7 +19,7 @@
 }
 
 .tituloBanner h1 {
-    font-size: clamp(2.5rem, 8vw, 100px);
+    font-size: clamp(2rem, 8vw, 100px);
     color: #fff;
     text-shadow: 3px 5px 2px #474747;
 }
@@ -42,16 +42,27 @@
 }
 
 @media (max-width:375px) {
+    .secaoBanner {
+        width: 100%;
+        height: 100vh;
+        background-color: #F9DB79;
+        position: relative;
+    }
+
+
     .tituloBanner {
-        width: 300px;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
+        top: 40%;
+        left: 0;
+        transform: none;
     }
 
     .caixaImagem {
         width: 300px;
         height: 500px;
-        margin-top: 25%;
+        margin: 25% auto 0;
     }
 
     .caixaImagem img {
@@ -59,7 +70,4 @@
         height: 100%;
     }
 
-    .tituloBanner {
-        top: 40%;
-    }
 }
