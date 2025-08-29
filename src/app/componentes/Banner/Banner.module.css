@@ -1,8 +1,12 @@
 .secaoBanner {
     width: 100%;
-    height: 90vh;
+    max-height: 100dvh;
     background-color: #F9DB79;
     position: relative;
+    height: 100vh;
+    /* fallback */
+    height: 100dvh;
+    /* browsers modernos */
 }
 
 .caixaImagem {
@@ -60,7 +64,7 @@
 
     .caixaImagem img {
         width: 100%;
-        height: auto;
+        min-height: 500px;
         max-height: 700px;
         object-fit: cover;
     }
